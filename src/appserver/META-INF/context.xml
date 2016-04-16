@@ -1,0 +1,19 @@
+<Context path="/usercenter" debug="9" privileged="true">
+    <Resource name="jdbc/oracle" auth="Container"
+	type="javax.sql.DataSource"
+	factory="org.logicalcobwebs.proxool.ProxoolDataSource"
+	proxool.driver-url="jdbc:oracle:thin:@192.168.0.105:1521:orcl"
+	proxool.driver-class="oracle.jdbc.driver.OracleDriver" 
+	user="wxh"
+	password="wxh" 
+	proxool.alias="auditdb"
+	proxool.maximum-connection-count="20"
+	proxool.minimum-connection-count="2"
+	proxool.maximum-connection-lifetime="180000"
+	proxool.maximum-active-time="300000"
+	proxool.house-keeping-test-sql="select 1 from dual"
+	proxool.fatal-sql-exception="Connection is closed,SQLSTATE=08003,Error opening socket.\nSQLSTATE=08S01,SQLSTATE=08S01"
+	proxool.fatal-sql-exception-wrapper-class="org.logicalcobwebs.proxool.FatalRuntimeException" 
+	testBeforeUse="false"
+	testAfterUse="false"/>
+</Context>

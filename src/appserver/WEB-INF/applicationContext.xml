@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-autowire="no" default-dependency-check="none">
+	<!-- PROXY DAO Beans -->
+
+	<bean id="deviceDAO" class="com.inetec.ichange.mc.pojo.DeviceDao">
+	</bean>
+	<bean id="configDAO" class="com.inetec.ichange.mc.pojo.ConfigDao">
+	</bean>
+	<bean id="snmpoidDAO" class="com.inetec.ichange.mc.pojo.SnmpOIDDao">
+	</bean>
+	<!--PROXY Action Beans -->
+	<bean id="mcIAction" class="com.inetec.ichange.mc.action.IAction"
+		abstract="true" singleton="false">
+		<property name="deviceDAO">
+			<ref local="deviceDAO" />
+		</property>
+		<property name="configDAO">
+			<ref local="configDAO" />
+		</property>
+		<property name="snmpoidDAO">
+			<ref local="snmpoidDAO" />
+		</property>
+	</bean>
+
+	<bean id="sytemRestartAction" class="com.inetec.ichange.mc.action.SystemRestartAction"
+		parent="mcIAction" singleton="false" />
+
+	<bean id="listDeviceAction" class="com.inetec.ichange.mc.action.ListDeviceAction"
+		parent="mcIAction" singleton="false" />
+    <bean id="saveDeviceAction" class="com.inetec.ichange.mc.action.SaveDeviceAction"
+		parent="mcIAction" singleton="false" />
+		
+		<bean id="listSnmpOIDAction" class="com.inetec.ichange.mc.action.ListSnmpOIDAction"
+		parent="mcIAction" singleton="false" />
+    <bean id="saveSnmpOIDAction" class="com.inetec.ichange.mc.action.SaveSnmpOIDAction"
+		parent="mcIAction" singleton="false" />
+		
+
+	<bean id="loadConfigAction" class="com.inetec.ichange.mc.action.LoadConfigAction"
+		parent="mcIAction" singleton="false" />
+
+	<bean id="saveConfigAction" class="com.inetec.ichange.mc.action.SaveConfigAction"
+		parent="mcIAction" singleton="false" />
+   <bean id="delSnmpOIDAction" class="com.inetec.ichange.mc.action.DelSnmpOIDAction"
+		parent="mcIAction" singleton="false" />
+   <bean id="delDeviceAction" class="com.inetec.ichange.mc.action.DelDeviceAction"
+		parent="mcIAction" singleton="false" />
+	<bean id="logoffAction" class="com.inetec.ichange.mc.action.LogoffAction"
+		 singleton="false" />
+	<bean id="changePwdAction" class="com.inetec.ichange.mc.action.ChangePwdAction"
+		singleton="false" />
+</beans>

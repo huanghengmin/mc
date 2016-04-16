@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+        <ip>127.0.0.1</ip>
+        <dbtype>mysql</dbtype>
+        <username>root</username>
+        <password>123456</password>
+        <dbname>jksys</dbname>
+        <table>contentfilter</table>
+        <column>filter</column>
+
+</configuration>

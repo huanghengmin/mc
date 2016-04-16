@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>探针系统</title>
+    <link rel="stylesheet" type="text/css" href="css/collapser.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/index.css"/>-->
+    <link rel="stylesheet" type="text/css" href="css/ext-all.css"/>
+    <script type="text/javascript">
+        function changPwd() {
+            window.showModalDialog("changepwd.jsp", this, "dialogWidth:300px;dialogHeight:200px;help:no;status:no;resizable:yes;scroll:no");
+//            window.open("changepwd.html");
+        }
+
+        function logoff() {
+            window.location = "IPlatManager?action=logoffAction";
+        }
+    </script>
+</head>
+<body id="docs">
+<div id="loading-mask"
+     style="width: 100%; height: 100%; background: #c3daf9; position: absolute; z-index: 20000; left: 0; top: 0;">
+    &#160;
+</div>
+<div id="loading">
+    <div class="loading-indicator">
+        <img src="images/default/grid/loading.gif"
+             style="width: 16px; height: 16px;" align="middle">
+        &#160;正在加载...
+    </div>
+</div>
+<!-- include everything after the loading indicator -->
+
+
+<script type="text/javascript" src="js/ext-base.js"></script>
+<script type="text/javascript" src="js/ext-all.js"></script>
+<SCRIPT type="text/javascript" src="js/audit/audit.js"></SCRIPT>
+<script type="text/javascript" src="js/audit/index.js"></script>
+
+  <div id="header">
+    <table width="100%" height="59" border="0" cellpadding="0" cellspacing="0" background="images/header.jpg">
+        <tr>
+            <td align="right" valign="bottom">
+                <table width="150" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td><img src="images/btn_modif_pw.gif" width="64" height="22" onclick="changPwd()"
+                             onmouseover="this.style.cursor='hand'" onmouseout="this.style.cursor='normal'"/></td>
+                        <td><img src="images/btn_exit.gif" width="64" height="22" onclick="logoff()" onmouseover="this.style.cursor='hand'"
+                             onmouseout="this.style.cursor='normal'"/></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+  </div>
+
+<div id="classes">
+    <!-- BEGIN TREE -->
+    <div class="pkg">
+        <h3>功能菜单</h3>
+        <div class="pkg-body">
+            <a href="proteConfig.html">探针配置</a>
+            <a href="deviceManage.html">设备管理</a>
+            <a href="snmpOIDManage.html">SNMPOID管理</a>
+            <a href="addresEquipmentScan.html">设备扫描</a>
+            <a href="equipmentWorkInfo.html" >设备运行信息</a>
+            <a href="vpnMonitor.html">vpn监控</a>
+            <!--<a href="vpnTest.html">vpn获取用户信息测试</a>-->
+        </div>
+        <h3>网络管理</h3>
+        <div class="pkg-body">
+            <a href="pages/net/manager_interface.html">接口管理</a>
+            <a href="pages/net/manager_router.html">路由管理</a>
+            <a href="pages/net/manager_ping.html">连接测试</a>
+            <a href="pages/net/manager_telnet.html">端口测试</a>
+        </div>
+        <h3>系统管理</h3>
+        <div class="pkg-body">
+            <a href="pages/system/about.html">平台说明</a>
+            <a href="pages/system/manager_config.html">安全配置</a>
+            <a href="pages/system/manager_platform.html">平台管理</a>
+            <a href="pages/system/downloadLog.html">日志下载</a>
+            <a href="pages/system/upgrade.html">版本升级</a>
+        </div>
+    </div>
+    <!-- END TREE -->
+</div>
+
+<iframe id="main" id="main" frameborder="0"></iframe>
+</body>
+</html>

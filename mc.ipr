@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AntConfiguration">
+    <defaultAnt bundledAnt="true" />
+  </component>
+  <component name="ArtifactManager">
+    <artifact type="exploded-war" name="mc:appserver exploded">
+      <output-path>E:/fartec/ichange/mc/tomcat/webapps/mc</output-path>
+      <root id="root">
+        <element id="javaee-facet-resources" facet="mc/web/appserver" />
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="lib">
+            <element id="file-copy" path="$PROJECT_DIR$/shared/common/lib/xyzbvc.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/shared/common/lib/common.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/shared/taskdef/lib/taskdef.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-pool/commons-pool.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-digester/commons-digester.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-collections/commons-collections.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-logging/commons-logging.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-beanutils/commons-beanutils.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-httpclient/commons-httpclient.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-codec/commons-codec.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../tools/junit/junit.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sourceforge/slf4j-1.5.6/slf4j-api-1.5.6.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sourceforge/ehcache/ehcache-1.1.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sourceforge/slf4j-1.5.6/slf4j-jdk14-1.5.6.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sourceforge/freemarker/freemarker.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/spring/spring.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/spring/xwork.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sun/jaf/activation.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sun/javamail/mail.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/apache/mina/mina-core.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sourceforge/cp3/c3p0-0.9.1.2.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/hibernate/v3/asm-attrs.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/hibernate/v3/cglib-2.1.3.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/hibernate/v3/cglib-nodep.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/hibernate/v3/collin.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/hibernate/v3/ehcache.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/hibernate/v3/ezmorph.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/hibernate/v3/hibernate3.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/hibernate/v3/jaas.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/hibernate/v3/jcommon.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/hibernate/v3/jdbc2_0-stdext.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/hibernate/v3/jfreechart.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/hibernate/v3/jstl.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/hibernate/v3/jta.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/hibernate/v3/ognl-2.6.11.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/struts2/antlr.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/struts2/asm.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/struts2/concurrent-1.3.4.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/struts2/struts2-convention-plugin.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/struts2/struts2-core.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/struts2/struts2-spring-plugin.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-logging/commons-logging-api.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/microsoft/msutil.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-lang/commons-lang.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/log4j/log4j.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/dom4j/dom4j.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-fileupload/commons-fileupload.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-discovery/commons-discovery.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-io/commons-io.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-net/commons-net.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-validator/commons-validator.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/struts/struts-el.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/struts/struts.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/json/json-taglib.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/json/json.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/json/jsonplugin.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/json/ezmorph.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sourceforge/snmp/snmp4j-2.0.1.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sourceforge/snmp/org.opengoss.snmphibernate.mib_1.3.0.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sourceforge/snmp/org.opengoss.snmphibernate.impl.snmp4j_1.3.0.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sourceforge/snmp/org.opengoss.snmphibernate.api_1.3.0.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sourceforge/persistence4j/persistence4j-jdbc-1.6.1.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sourceforge/persistence4j/persistence4j-common-1.6.1.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/apache/xerces/xercesImpl.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/apache/xerces/xml-apis.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sourceforge/syslog/syslog4j.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/jaxen/jaxen.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/jakarta/commons-dbcp/commons-dbcp.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/sourceforge/persistence4j/spiderdb-1.6.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/mc-derby/derby-10.6.1.0.jar" />
+            <element id="file-copy" path="$PROJECT_DIR$/../sharelib/json/json-lib.jar" />
+          </element>
+          <element id="directory" name="classes">
+            <element id="module-output" name="mc" />
+          </element>
+        </element>
+      </root>
+    </artifact>
+  </component>
+  <component name="BuildJarProjectSettings">
+    <option name="BUILD_JARS_ON_MAKE" value="false" />
+  </component>
+  <component name="ClearCaseSharedConfig">
+    <option name="myUseUcmModel" value="true" />
+  </component>
+  <component name="CodeStyleProjectProfileManger">
+    <option name="PROJECT_PROFILE" />
+    <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
+  </component>
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="?*.properties" />
+      <entry name="?*.xml" />
+      <entry name="?*.gif" />
+      <entry name="?*.png" />
+      <entry name="?*.jpeg" />
+      <entry name="?*.jpg" />
+      <entry name="?*.html" />
+      <entry name="?*.dtd" />
+      <entry name="?*.tld" />
+    </wildcardResourcePatterns>
+    <annotationProcessing enabled="false" useClasspath="true" />
+  </component>
+  <component name="CopyrightManager" default="">
+    <module2copyright />
+  </component>
+  <component name="DependenciesAnalyzeManager">
+    <option name="myForwardDirection" value="false" />
+  </component>
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="EclipseCompilerSettings">
+    <option name="GENERATE_NO_WARNINGS" value="true" />
+    <option name="DEPRECATION" value="false" />
+  </component>
+  <component name="EclipseEmbeddedCompilerSettings">
+    <option name="DEBUGGING_INFO" value="true" />
+    <option name="GENERATE_NO_WARNINGS" value="true" />
+    <option name="DEPRECATION" value="false" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
+    <option name="MAXIMUM_HEAP_SIZE" value="128" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/src/appserver/js3/net/manager_interface.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/appserver/js3/net/manager_ping.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/appserver/js3/net/manager_router.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/appserver/js3/net/manager_telnet.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/appserver/js3/system/manager_config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/appserver/js3/system/manager_platform.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/appserver/js3/system/upgrade_version.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/entity/EquipmentInfo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/entity/JarBean.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/entity/NetInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/utils/Configuration.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/utils/FileUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/utils/GetListNetInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/utils/LicenseUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/utils/ManifestUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/utils/NetworkUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/utils/StringContext.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/utils/StringUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/web/action/ActionBase.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/web/action/ConfigManagerAction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/web/action/DownLoadAction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/web/action/InterfaceManagerAction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/web/action/LicenseAction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/web/action/PlatformAction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/web/action/UpgradeAction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/hzih/mc/web/action/VpnAction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/common/ApplicationContextUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/common/SetCharsetFilter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/common/SpringContextLoaderListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/common/syslog/SyslogHandler.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/common/syslog/SyslogServer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/common/syslog/code/SyslogProtocolDecoder.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/main/api/DataAttributes.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/main/api/EChange.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/main/api/EStatus.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/main/api/HeaderProcess.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/main/api/IChangeMain.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/main/api/IChangeType.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/main/api/ISourcePlugin.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/main/api/ISourePlugin.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/main/api/ITargetPlugin.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/main/api/Status.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/PassPort.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/action/ChangePwdAction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/SetCharsetFilter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/http/ConverFromGBKToUTF8.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/http/ZdCmsHttpProcess.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/http/client/IpSecHttpclient.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/http/client/JbpgHttpclient.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/http/client/TSRSHttpclient.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/http/client/UTF8GetMetod.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/databean/BaseDataBean.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/databean/DeviceDataBean.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/databean/SysterminalinfDataBean.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/ping/PingMonitorService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/snmp/HostSnmpProcessV2Imp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/snmp/LenovoProcessV2Imp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/snmp/MultiThreadedTrapReceiver.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/snmp/SnmpAgentService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/snmp/SnmpMonitorService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/snmp/SnmpProcessV1Imp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/snmp/SnmpProcessV2Imp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/snmp/SnmpProcessV2Random.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/snmp/SnmpProcessV3Imp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/snmp/SnmpUtilSendTrap.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/syslog/format/ILogFormat.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/syslog/format/KoalVpnLog.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/utils/Arith.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/utils/TerminalInfoCache.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/service/monitor/vpn/VpnServiceResponse.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/inetec/ichange/mc/utils/TomcatHelp.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utest/java/com/inetec/ServiceResponse.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/utest/java/com/inetec/ServiceUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utest/java/com/inetec/Test.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/utest/java/com/inetec/aaa.java" charset="GBK" />
+  </component>
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="PRINT_LINE_NUMBERS" value="false" />
+    <option name="OPEN_IN_BROWSER" value="false" />
+    <option name="OUTPUT_DIRECTORY" value="D:\inetec\ichange\mc\exportToHTML" />
+  </component>
+  <component name="IdProvider" IDEtalkID="DD48A5DF3713B0BEB348753B5F77BB6A" />
+  <component name="InspectionProjectProfileManager">
+    <profiles>
+      <profile version="1.0" is_locked="false">
+        <option name="myName" value="Project Default" />
+        <option name="myLocal" value="false" />
+        <inspection_tool class="JavadocReference" enabled="false" level="ERROR" enabled_by_default="false" />
+      </profile>
+    </profiles>
+    <option name="PROJECT_PROFILE" value="Project Default" />
+    <option name="USE_PROJECT_PROFILE" value="true" />
+    <version value="1.0" />
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" />
+    <option name="OPTION_SCOPE" value="protected" />
+    <option name="OPTION_HIERARCHY" value="true" />
+    <option name="OPTION_NAVIGATOR" value="true" />
+    <option name="OPTION_INDEX" value="true" />
+    <option name="OPTION_SEPARATE_INDEX" value="true" />
+    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true" />
+    <option name="OPTION_DEPRECATED_LIST" value="true" />
+    <option name="OTHER_OPTIONS" value="" />
+    <option name="HEAP_SIZE" />
+    <option name="LOCALE" />
+    <option name="OPEN_IN_BROWSER" value="true" />
+  </component>
+  <component name="LogConsolePreferences">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="Palette2">
+    <group name="Swing">
+      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+      </item>
+      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
+        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+        <initial-values>
+          <property name="text" value="Button" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="RadioButton" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="CheckBox" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="Label" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
+          <preferred-size width="-1" height="20" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+      </item>
+    </group>
+  </component>
+  <component name="ProjectDetails">
+    <option name="projectName" value="mc" />
+  </component>
+  <component name="ProjectKey">
+    <option name="state" value="D:\fartec\ichange\mc\mc.ipr" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mc.iml" filepath="$PROJECT_DIR$/mc.iml" />
+    </modules>
+  </component>
+  <component name="ProjectResources">
+    <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/target" />
+  </component>
+  <component name="ResourceManagerContainer">
+    <option name="myResourceBundles">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Perforce" />
+  </component>
+  <component name="WebServicesPlugin" addRequiredLibraries="true" />
+  <component name="com.intellij.jsf.UserDefinedFacesConfigs">
+    <option name="USER_DEFINED_CONFIGS">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+  </component>
+  <component name="uidesigner-configuration">
+    <option name="INSTRUMENT_CLASSES" value="false" />
+  </component>
+</project>
+

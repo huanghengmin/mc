@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="ichange.xsd">-->
+<configuration>
+    <system>
+        <ichange>
+            <privatekey>client.ks</privatekey>
+            <privatepassword>changeit</privatepassword>
+            <jdbcs>
+                <jdbc value="test" desc="">
+                    <driverclass>oracle.jdbc.driver.OracleDriver</driverclass>
+                    <dburl>jdbc:oracle:thin:@10.71.0.50:1521:engsvr01</dburl>
+                    <dbowner>test</dbowner>
+                    <dbhost/>
+                    <dbvender>Oracle</dbvender>
+                    <dbtype>oracle</dbtype>
+                    <dbuser>test</dbuser>
+                    <password>pass</password>
+                    <encoding>UTF-8</encoding>
+                </jdbc>
+                <jdbc value="test1" desc="">
+                    <driverclass>oracle.jdbc.driver.OracleDriver</driverclass>
+                    <dburl>jdbc:oracle:thin:@10.71.0.50:1521:engsvr01</dburl>
+                    <dbowner>test</dbowner>
+                    <dbhost/>
+                    <dbvender>Oracle</dbvender>
+                    <dbtype>oracle</dbtype>
+                    <dbuser>test</dbuser>
+                    <password>pass</password>
+                    <encoding>UTF-8</encoding>
+                </jdbc>
+            </jdbcs>
+            <types>
+                <type value="111" desc="">
+                    <isactive>true</isactive>
+                    <isrecover>false</isrecover>
+                    <datapath>c:\collector\data</datapath>
+                    <deletefile>false</deletefile>
+                    <plugin>
+                        <sourceclassname>com.inetec.ichange.plugin.dbchange.DbChangeSource</sourceclassname>
+                        <targetclassname>com.inetec.ichange.plugin.dbchange.DbChangeTarget</targetclassname>
+                        <sourceplugin>
+                            <dbchange>
+                                <database name="test">
+                                    <oldstep>false</oldstep>
+                                    <operation>trigger</operation>
+                                    <temptable/>
+                                    <maxrecords>100</maxrecords>
+                                    <interval>120</interval>
+                                    <enable>true</enable>
+                                    <tables>
+                                        <table value="USERMANAGERTAB">
+                                            <monitordelete>false</monitordelete>
+                                            <monitorupdate>false</monitorupdate>
+                                            <monitorinsert>false</monitorinsert>
+                                            <seqnumber>1</seqnumber>
+                                            <interval>120</interval>
+                                            <fields>
+                                                <field value="USER_MD5">
+                                                    <JDBC_TYPE>VARCHAR</JDBC_TYPE>
+                                                    <IS_PK>false</IS_PK>
+                                                    <COLUMN_SIZE>50</COLUMN_SIZE>
+                                                    <IS_NULL>true</IS_NULL>
+                                                    <DB_TYPE>VARCHAR2</DB_TYPE>
+                                                </field>
+                                                <field value="USER_MD6">
+                                                    <JDBC_TYPE>VARCHAR</JDBC_TYPE>
+                                                    <IS_PK>false</IS_PK>
+                                                    <COLUMN_SIZE>50</COLUMN_SIZE>
+                                                    <IS_NULL>true</IS_NULL>
+                                                    <DB_TYPE>VARCHAR2</DB_TYPE>
+                                                </field>
+                                            </fields>
+                                        </table>
+                                    </tables>
+                                </database>
+                            </dbchange>
+                        </sourceplugin>
+                        <targetplugin>
+                            <dbchange>
+                                <srcdb value="fdfd">
+                                    <tables>
+                                        <srctable value="USERMANAGERTAB">
+                                            <targetdb value="wxh">
+                                                <table value="UserManagerTab">
+                                                    <deleteenable>true</deleteenable>
+                                                    <onlyinsert>false</onlyinsert>
+                                                    <condition/>
+                                                    <fields>
+                                                        <field value="USER_MD5">
+                                                            <JDBC_TYPE>VARCHAR</JDBC_TYPE>
+                                                            <DESTFIELD>USER_MD5</DESTFIELD>
+                                                            <IS_PK>false</IS_PK>
+                                                            <COLUMN_SIZE>50</COLUMN_SIZE>
+                                                            <IS_NULL>true</IS_NULL>
+                                                            <DB_TYPE>VARCHAR2</DB_TYPE>
+                                                        </field>
+                                                    </fields>
+                                                </table>
+                                            </targetdb>
+                                        </srctable>
+                                    </tables>
+                                </srcdb>
+                            </dbchange>
+                        </targetplugin>
+                    </plugin>
+                </type>
+                <type value="sipchange" desc="sipchange">
+                    <isactive>true</isactive>
+                    <plugin>
+                        <sourceclassname>com.inetec.ichange.plugin.sipchange.SIPChangeSource</sourceclassname>
+                        <targetclassname>com.inetec.ichange.plugin.sipchange.SIPChangeTarget</targetclassname>
+                        <sourceplugin>
+                            <videochange>
+                                <port>8100</port>
+                                <!---应用服务器服务端口(0-65536)-->
+                                <serveraddress>192.168.0.102</serveraddress>
+                                <!-- 应用服务协议(udp,tcp)-->
+                                <transport>udp</transport>
+                                <!-- 应用服务数据包长度(单位字节)-->
+                                <length>1024</length>
+                                <!---应用服务器地址-->
+                                <poolmin>1</poolmin>
+                                <!--最小连接数（1-100）-->
+                                <poolmax>100</poolmax>
+                                <!--最大连接数（2-100）-->
+                                <looptime>10</looptime>
+                                <!--轮询时间(毫秒)-->
+                                <charset>utf-8</charset>
+                                <!--应用服务数据编码-->
+                                <!---应用传输服务端口(相对固定)-->
+                                <serviceaddress>192.168.0.102</serviceaddress>
+
+                                <serviceport>8100</serviceport>
+                                <!---应用传输服务端口(相对固定)-->
+                                <udpportmin>9100</udpportmin>
+                                <!---udp传输端口最小(相对固定)-->
+                                <udpportmax>9300</udpportmax>
+                                <!--udp 数据包长度(单位字节)-->
+                                <udpdatalength>1038</udpdatalength>
+                                <!---udp传输端口最大(相对固定)-->
+                                <clientauthenable>false</clientauthenable>
+                                <!--是否启用客户端认证-->
+                                <authaddress>192.168.0.166:8080,192.168.1.165:8090</authaddress>
+                                <!--客户端认证应用服务器IP地址-->
+                                <ipblacklist>
+                                    <ipblack>
+                                        <ip>192.168.0.166</ip>
+                                        <mac>00-10-0f-03</mac>
+                                    </ipblack>
+                                    <ipblack>
+                                        <ip>192.168.0.167</ip>
+                                        <mac>00-10-0f-13</mac>
+                                    </ipblack>
+                                    <ipblack>
+                                        <ip>192.168.0.168</ip>
+                                        <mac>00-10-0f-23</mac>
+                                    </ipblack>
+                                </ipblacklist>
+                                <!--ip/mac 黑名单-->
+                                <ipwhitelist>
+                                    <ipwhite>
+                                        <ip>192.168.0.168</ip>
+                                        <mac>00-10-0f-23</mac>
+                                    </ipwhite>
+                                    <ipwhite>
+                                        <ip>192.168.0.166</ip>
+                                        <mac>00-10-0f-03</mac>
+                                    </ipwhite>
+                                    <ipwhite>
+                                        <ip>192.168.0.168</ip>
+                                        <mac>00-10-0f-23</mac>
+                                    </ipwhite>
+                                </ipwhitelist>
+                                <!--ip/mac 白名单-->
+                                <ipfilter>1</ipfilter>
+                                <!--ip/mac过虑策略可选值为不过虑（0）,黑名单(1)、白名单(2)、黑白名单(3)-->
+
+                            </videochange>
+                        </sourceplugin>
+                        <targetplugin>
+                            <servicechange>
+                                <!-- 平台服务地址-->
+                                <serviceaddress>192.168.0.102</serviceaddress>
+                                <!-- 应用服务地址-->
+                                <serveraddress>192.168.0.102</serveraddress>
+                                <!-- 应用服务协议(udp,tcp)-->
+                                <transport>udp</transport>
+                                <!-- 应用服务数据包长度(单位字节)-->
+                                <length>1024</length>
+                                <poolmin>1</poolmin>
+                                <!--最小连接数（1-100）-->
+                                <poolmax>100</poolmax>
+                                <!--最大连接数（2-100）-->
+                                <looptime>10</looptime>
+                                <!--轮询时间(毫秒)-->
+                                <charset>utf-8</charset>
+                                <!--应用服务数据编码-->
+                                <serviceport>8100</serviceport>
+                                <!---应用传输服务端口(相对固定)-->
+                                <udpportmin>9100</udpportmin>
+                                <!---udp传输端口最小(相对固定)-->
+                                <udpportmax>9300</udpportmax>
+                                <!---udp传输端口最大(相对固定)-->
+
+                                <udpdatalength>1038</udpdatalength>
+                                <!--udp 数据包长度(单位字节)-->
+                                <authserver>192.168.0.166:8080,192.168.1.165:8090</authserver>
+                                <!--认证应用服务器IP地址-->
+                                <videoserverset>192.168.0.166:8080,192.168.1.165:8090</videoserverset>
+                                <!--流媒体应用服务器IP地址-->
+                                <managerserverset>192.168.0.166:8080,192.168.1.165:8090</managerserverset>
+                                <!--内容管理服务器IP地址-->
+                                <ptzserverset>192.168.0.166:8080,192.168.1.165:8090</ptzserverset>
+                                <!--云台控制服务器IP地址-->
+                            </servicechange>
+                        </targetplugin>
+                    </plugin>
+                </type>
+            </types>
+            <channel>
+                <type>https</type>
+                <ipaddress>127.0.0.1</ipaddress>
+                <privated>false</privated>
+                <targetpath/>
+                <port>9060</port>
+                <sourcepath/>
+                <interval>1000</interval>
+            </channel>
+            <ichangeutils>
+                <gcinterval>10</gcinterval>
+                <recover>10</recover>
+            </ichangeutils>
+        </ichange>
+    </system>
+</configuration>
